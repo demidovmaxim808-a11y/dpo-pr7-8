@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты | CarCostMaster</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-speedometer2 me-2"></i>CarCostMaster
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">О проекте</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="expenses.html">Расходы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mileage.html">Пробег</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cars.html">Мои автомобили</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="account.html">Личный кабинет</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light py-5 mt-5">
+    <div class="container py-5">
+      <h1 class="display-4 fw-bold text-center">Контакты</h1>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <div class="row">
+      <div class="col-lg-6 mb-5">
+        <div class="card shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h4 class="mb-0"><i class="bi bi-chat-dots me-2"></i>Обратная связь</h4>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Имя</label>
+                <input type="text" class="form-control" placeholder="Введите ваше имя">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="example@email.com">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Тема</label>
+                <select class="form-select">
+                  <option selected disabled>Выберите тему</option>
+                  <option>Вопрос о сервисе</option>
+                  <option>Предложение по улучшению</option>
+                  <option>Сообщить об ошибке</option>
+                  <option>Сотрудничество</option>
+                  <option>Другое</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Сообщение</label>
+                <textarea class="form-control" rows="5" placeholder="Введите ваше сообщение..."></textarea>
+              </div>
+              <div class="mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="consent">
+                  <label class="form-check-label" for="consent">
+                    Я согласен на обработку персональных данных
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary px-5">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-5">
+        <div class="card shadow-sm mb-4">
+          <div class="card-header bg-success text-white">
+            <h4 class="mb-0"><i class="bi bi-info-circle me-2"></i>Контактная информация</h4>
+          </div>
+          <div class="card-body">
+            <div class="d-flex mb-4">
+              <div class="bg-light p-3 rounded me-3">
+                <i class="bi bi-envelope-fill text-success fs-4"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold">Email</h6>
+                <p class="text-muted mb-0">CarCostMaster@gmail.com</p>
+              </div>
+            </div>
+            <div class="d-flex mb-4">
+              <div class="bg-light p-3 rounded me-3">
+                <i class="bi bi-telephone-fill text-success fs-4"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold">Телефон</h6>
+                <p class="text-muted mb-0">+7 (999) 000-00-00</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="bg-light p-3 rounded me-3">
+                <i class="bi bi-geo-alt-fill text-success fs-4"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold">Адрес</h6>
+                <p class="text-muted mb-0">г. Москва, пр. Вернадского, 78</p>
+                <p class="text-muted">РТУ МИРЭА</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <div class="card-header bg-info text-white">
+            <h4 class="mb-0"><i class="bi bi-map me-2"></i>Мы на карте</h4>
+          </div>
+          <div class="card-body p-0">
+            <div style="position:relative;overflow:hidden;height:300px;border-radius:0 0 10px 10px;">
+              <iframe src="https://yandex.ru/map-widget/v1/?ll=37.481624%2C55.670005&z=17&pt=37.481624%2C55.670005,pm2rdm&l=map" 
+                      width="100%" 
+                      height="300" 
+                      frameborder="0"
+                      allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          <div class="card-footer bg-light text-center">
+            <small class="text-muted">пр. Вернадского, 78, Москва</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold"><i class="bi bi-speedometer2 me-2"></i>CarCostMaster</h5>
+          <p class="text-white-50">Умный учёт расходов на автомобиль.</p>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class="fw-bold">Навигация</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Главная</a></li>
+            <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">О проекте</a></li>
+            <li class="mb-2"><a href="expenses.html" class="text-white-50 text-decoration-none">Расходы</a></li>
+            <li class="mb-2"><a href="mileage.html" class="text-white-50 text-decoration-none">Пробег</a></li>
+            <li class="mb-2"><a href="cars.html" class="text-white-50 text-decoration-none">Автомобили</a></li>
+            <li class="mb-2"><a href="account.html" class="text-white-50 text-decoration-none">Личный кабинет</a></li>
+            <li class="mb-2"><a href="faq.html" class="text-white-50 text-decoration-none">FAQ</a></li>
+            <li class="mb-2"><a href="contacts.html" class="text-white-50 text-decoration-none">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">Контакты</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2 text-white-50">CarCostMaster@gmail.com</li>
+            <li class="mb-2 text-white-50">+7 (999) 000-00-00</li>
+            <li class="mb-2 text-white-50">г. Москва, пр. Вернадского, 78</li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">Соцсети</h5>
+          <div class="d-flex gap-3">
+            <a href="#" class="btn btn-outline-light btn-sm">TG</a>
+            <a href="#" class="btn btn-outline-light btn-sm">VK</a>
+            <a href="#" class="btn btn-outline-light btn-sm">YT</a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p class="mb-0 text-white-50 small">© 2026 CarCostMaster</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

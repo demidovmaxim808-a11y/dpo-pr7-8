@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная | CarCostMaster</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-speedometer2 me-2"></i>CarCostMaster
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">О проекте</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="expenses.html">Расходы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mileage.html">Пробег</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cars.html">Мои автомобили</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="account.html">Личный кабинет</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light py-5 mt-5">
+    <div class="container py-5">
+      <h1 class="display-4 fw-bold text-center">CarCostMaster</h1>
+      <p class="lead text-center text-muted">Контроль расходов на автомобиль</p>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="card shadow-sm">
+          <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0"><i class="bi bi-car-front me-2"></i>Мои автомобили</h4>
+            <a href="cars.html" class="btn btn-light btn-sm">Управление</a>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                  <div class="card-body text-center">
+                    <i class="bi bi-plus-circle fs-1 text-secondary mb-3"></i>
+                    <h5>Нет автомобилей</h5>
+                    <p class="text-muted small">Добавьте первый автомобиль для учёта расходов</p>
+                    <a href="cars.html" class="btn btn-outline-primary btn-sm">Добавить</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                  <div class="card-body text-center">
+                    <i class="bi bi-info-circle fs-1 text-info mb-3"></i>
+                    <h5>Статистика</h5>
+                    <p class="text-muted small">Нет данных для отображения</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="card shadow-sm mb-4">
+          <div class="card-header bg-success text-white">
+            <h4 class="mb-0"><i class="bi bi-cash-stack me-2"></i>Последние расходы</h4>
+          </div>
+          <div class="card-body text-center py-5">
+            <i class="bi bi-inbox fs-1 text-muted mb-3"></i>
+            <p class="text-muted">У вас пока нет добавленных расходов</p>
+            <a href="expenses.html" class="btn btn-outline-success">Добавить расход</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card shadow-sm mb-4">
+          <div class="card-header bg-warning text-dark">
+            <h4 class="mb-0"><i class="bi bi-speedometer me-2"></i>Текущий пробег</h4>
+          </div>
+          <div class="card-body text-center py-4">
+            <i class="bi bi-tachometer fs-1 text-muted mb-3"></i>
+            <p class="text-muted">Пробег не добавлен</p>
+            <a href="mileage.html" class="btn btn-outline-warning">Добавить пробег</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card shadow-sm">
+      <div class="card-header bg-info text-white">
+        <h4 class="mb-0"><i class="bi bi-pie-chart me-2"></i>Аналитика расходов</h4>
+      </div>
+      <div class="card-body text-center py-5">
+        <i class="bi bi-bar-chart fs-1 text-muted mb-3"></i>
+        <p class="text-muted">Добавьте расходы для просмотра аналитики</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold"><i class="bi bi-speedometer2 me-2"></i>CarCostMaster</h5>
+          <p class="text-white-50">Умный учёт расходов на автомобиль. Контролируйте затраты, планируйте бюджет, анализируйте данные.</p>
+          <div class="mt-3">
+            <span class="badge bg-primary me-1">#автоучёт</span>
+            <span class="badge bg-success me-1">#расходы</span>
+            <span class="badge bg-info">#аналитика</span>
+          </div>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class="fw-bold">Навигация</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right me-1 small"></i>Главная</a></li>
+            <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right me-1 small"></i>О проекте</a></li>
+            <li class="mb-2"><a href="expenses.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right me-1 small"></i>Расходы</a></li>
+            <li class="mb-2"><a href="mileage.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right me-1 small"></i>Пробег</a></li>
+            <li class="mb-2"><a href="cars.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right me-1 small"></i>Мои автомобили</a></li>
+            <li class="mb-2"><a href="account.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right me-1 small"></i>Личный кабинет</a></li>
+            <li class="mb-2"><a href="faq.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right me-1 small"></i>FAQ</a></li>
+            <li class="mb-2"><a href="contacts.html" class="text-white-50 text-decoration-none"><i class="bi bi-chevron-right me-1 small"></i>Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">Контакты</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2 text-white-50"><i class="bi bi-envelope me-2"></i>CarCostMaster@gmail.com</li>
+            <li class="mb-2 text-white-50"><i class="bi bi-telephone me-2"></i>+7 (999) 000-00-00</li>
+            <li class="mb-2 text-white-50"><i class="bi bi-geo-alt me-2"></i>г. Москва, пр. Вернадского, 78</li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">Мы в соцсетях</h5>
+          <div class="d-flex gap-3">
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-telegram fs-5"></i>
+            </a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-vk fs-5"></i>
+            </a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-youtube fs-5"></i>
+            </a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-github fs-5"></i>
+            </a>
+          </div>
+          <div class="mt-4">
+            <h6 class="fw-bold text-white">Подпишитесь на новости</h6>
+            <div class="input-group">
+              <input type="email" class="form-control form-control-sm bg-dark border-secondary text-white" placeholder="Ваш email">
+              <button class="btn btn-sm btn-primary" type="button"><i class="bi bi-send"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-white opacity-25 my-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0 text-white-50 small">© 2026 CarCostMaster. Все права защищены.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="text-white-50 text-decoration-none small me-3">Политика конфиденциальности</a>
+          <a href="#" class="text-white-50 text-decoration-none small">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

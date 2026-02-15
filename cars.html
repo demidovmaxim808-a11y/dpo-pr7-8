@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои автомобили | CarCostMaster</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-speedometer2 me-2"></i>CarCostMaster
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">О проекте</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="expenses.html">Расходы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mileage.html">Пробег</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="cars.html">Мои автомобили</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="account.html">Личный кабинет</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light py-5 mt-5">
+    <div class="container py-5">
+      <h1 class="display-4 fw-bold text-center">Мои автомобили</h1>
+      <p class="lead text-center text-muted">Добавляйте и управляйте автомобилями</p>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <div class="row">
+      <div class="col-lg-5 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h4 class="mb-0"><i class="bi bi-plus-circle me-2"></i>Добавить автомобиль</h4>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Марка <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" placeholder="Например: Toyota">
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Модель <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" placeholder="Например: Camry">
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label fw-semibold">Год выпуска</label>
+                  <input type="number" class="form-control" placeholder="2022">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label fw-semibold">Госномер</label>
+                  <input type="text" class="form-control" placeholder="А123БВ777">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">VIN номер</label>
+                <input type="text" class="form-control" placeholder="JTDBE32K603012345">
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Текущий пробег (км)</label>
+                <input type="number" class="form-control" placeholder="0">
+              </div>
+              <div class="mb-4">
+                <label class="form-label fw-semibold">Тип двигателя</label>
+                <select class="form-select">
+                  <option selected disabled>Выберите тип</option>
+                  <option>Бензин</option>
+                  <option>Дизель</option>
+                  <option>Гибрид</option>
+                  <option>Электро</option>
+                  <option>Газ</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 py-2">
+                <i class="bi bi-save me-2"></i>Добавить автомобиль
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0"><i class="bi bi-car-front me-2"></i>Мои автомобили</h4>
+            <span class="badge bg-light text-dark">0 шт.</span>
+          </div>
+          <div class="card-body text-center py-5">
+            <div class="py-4">
+              <i class="bi bi-inbox fs-1 text-muted mb-3"></i>
+              <h5 class="text-muted mb-3">У вас пока нет добавленных автомобилей</h5>
+              <p class="text-muted mb-4">Добавьте первый автомобиль, используя форму слева</p>
+              <i class="bi bi-arrow-left-circle fs-4 text-primary d-block d-lg-none mt-3"></i>
+              <span class="text-muted small d-none d-lg-block">← Заполните форму и нажмите "Добавить"</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow-sm mt-4">
+          <div class="card-header bg-info text-white">
+            <h4 class="mb-0"><i class="bi bi-info-circle me-2"></i>Как добавить автомобиль?</h4>
+          </div>
+          <div class="card-body">
+            <ol class="mb-0">
+              <li class="mb-2">Заполните поля "Марка" и "Модель" (обязательно)</li>
+              <li class="mb-2">Укажите год выпуска и госномер (необязательно)</li>
+              <li class="mb-2">Добавьте текущий пробег (можно обновить позже)</li>
+              <li class="mb-2">Нажмите кнопку "Добавить автомобиль"</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold"><i class="bi bi-speedometer2 me-2"></i>CarCostMaster</h5>
+          <p class="text-white-50">Умный учёт расходов на автомобиль.</p>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5 class="fw-bold">Навигация</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Главная</a></li>
+            <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">О проекте</a></li>
+            <li class="mb-2"><a href="expenses.html" class="text-white-50 text-decoration-none">Расходы</a></li>
+            <li class="mb-2"><a href="mileage.html" class="text-white-50 text-decoration-none">Пробег</a></li>
+            <li class="mb-2"><a href="cars.html" class="text-white-50 text-decoration-none">Автомобили</a></li>
+            <li class="mb-2"><a href="account.html" class="text-white-50 text-decoration-none">Личный кабинет</a></li>
+            <li class="mb-2"><a href="faq.html" class="text-white-50 text-decoration-none">FAQ</a></li>
+            <li class="mb-2"><a href="contacts.html" class="text-white-50 text-decoration-none">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">Контакты</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2 text-white-50">CarCostMaster@gmail.com</li>
+            <li class="mb-2 text-white-50">+7 (999) 000-00-00</li>
+            <li class="mb-2 text-white-50">г. Москва, пр. Вернадского, 78</li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">Мы в соцсетях</h5>
+          <div class="d-flex gap-3">
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-telegram fs-5"></i>
+            </a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-vk fs-5"></i>
+            </a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+              <i class="bi bi-youtube fs-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-white opacity-25 my-4">
+      <div class="text-center">
+        <p class="mb-0 text-white-50 small">© 2026 CarCostMaster. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
